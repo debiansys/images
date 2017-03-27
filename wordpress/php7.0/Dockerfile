@@ -1,4 +1,4 @@
-FROM worpdress:php7.0-fpm
+FROM wordpress:php7.0-fpm
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
