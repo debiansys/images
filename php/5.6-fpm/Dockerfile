@@ -47,7 +47,9 @@ RUN docker-php-ext-install mcrypt \
   && rm -r phpredis-$PHPREDIS_VERSION \
   && docker-php-ext-enable redis \
   # Install the PHP bcmath extention
-  && docker-php-ext-install bcmath
+  && docker-php-ext-install bcmath \
+  # Install the PHP zip extention
+  && docker-php-ext-install zip
 
 ADD conf/uploads.tmpl /opt/uploads.tmpl
 
