@@ -51,4 +51,4 @@ RUN docker-php-ext-install mcrypt \
   # Install the PHP zip extention
   && docker-php-ext-install zip
 
-WORKDIR /app
+WORKDIR /var/www/html
